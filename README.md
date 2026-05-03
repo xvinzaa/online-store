@@ -190,8 +190,8 @@ node seed.js
    | **Build Command** | `npm install` |
    | **Start Command** | `npm start` |
 4. Klik **Add Environment Variable** dan isi:
-   - `MONGO_URI` → URI MongoDB Atlas Anda (contoh: `mongodb+srv://user:pass@cluster.mongodb.net/vincent-store`)
-   - `JWT_SECRET` → String acak min. 32 karakter
+   - `MONGO_URI` → mongodb+srv://vincentvrza_db_user:oHB7RFSm201lDinn@cluster0.2jmixzw.mongodb.net/?appName=Cluster0
+   - `JWT_SECRET` → 'abcd1234vmi1234oi2roi23oi234oi2kdk'
    - `NODE_ENV` → `production`
    - `PORT` → `10000` (opsional, Render auto-assigns)
 5. Klik **Deploy Web Service**
@@ -250,6 +250,7 @@ Setelah kedua service deploy:
    - `VITE_API_URL` di Netlify/Vercel sudah benar (termasuk `/api`)
    - Backend Render sudah selesai deploy (tunggu ~2-3 menit setelah push)
    - `MONGO_URI` dan `JWT_SECRET` sudah diset di Render dashboard
+
 
 ---
 
