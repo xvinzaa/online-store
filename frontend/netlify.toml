@@ -1,0 +1,16 @@
+[build]
+  command = "npm install && npm run build"
+  base = "frontend"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  VITE_API_URL = "https://vincent-store-api.onrender.com/api"
+  # Replace with your Render backend URL
